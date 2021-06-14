@@ -1,5 +1,6 @@
 const headerEl = document.querySelector("header");
 const scrollToTop = document.querySelector(".scrollToTop");
+
 window.addEventListener("scroll", () => {
   //获取头部区域的高度
   let height = headerEl.getBoundingClientRect().height;
@@ -124,6 +125,7 @@ exlopreBtnEls.forEach((exlopreBtnEl) => {
     scroll.animateScroll(document.querySelector("#about-us"));
   });
 });
+
 //折叠按钮事件
 const burgerEl = document.querySelector(".burger");
 burgerEl.addEventListener("click", () => {
